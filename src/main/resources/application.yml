@@ -65,6 +65,12 @@ spring:
     restart:
       # 热部署开关
       enabled: true
+
+  cache:
+    # 指定缓存类型 ehcache 本地缓存 redis 缓存
+    type: ehcache
+    ehcache:
+      config: classpath:ehcache.xml
   # redis 配置
   redis:
     # 地址
